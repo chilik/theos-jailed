@@ -27,6 +27,7 @@ endif
 LIBRARY_NAME = libsubstrate
 libsubstrate_FILES = Hooker.cc
 libsubstrate_INSTALL_PATH = /usr/lib
+#libsubstrate_INSTALL_PATH = "@executable_path/CydiaSubstrate"
 ifeq (\$(THEOS_PLATFORM_NAME),macosx)
 libsubstrate_LDFLAGS = -Wl,-allow_sub_type_mismatches
 endif
